@@ -1,6 +1,6 @@
 from django.db import models
 from ckeditor_uploader.fields import RichTextUploadingField
-#from embed_video.fields import EmbedVideoField
+from embed_video.fields import EmbedVideoField
 
 
 class Article(models.Model):
@@ -12,7 +12,7 @@ class Article(models.Model):
     article_likes = models.IntegerField(default=0)
     article_image = models.ImageField(null=True, blank=True, upload_to="images/",
                                       verbose_name=u'Изображение', )
-#    video = EmbedVideoField(null=True, blank=True, verbose_name=u'Видео', )
+    video = EmbedVideoField(null=True, blank=True, verbose_name=u'Видео', )
 
 
     def __str__(self):
