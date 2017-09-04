@@ -29,11 +29,11 @@ def articles(request):
     except EmptyPage:
         articles = paginator.page(paginator.num_pages)
 
-    return render_to_response('articles.html', {'articles': articles })
+    return render_to_response('content/articles.html', {'articles': articles })
 
 def article(request, article_id=1):
     """Вывод одной конкретной статьи """
-    return render_to_response('article.html', {'article': Article.objects.get(id=article_id),
+    return render_to_response('content/article.html', {'article': Article.objects.get(id=article_id),
                                                #'comments': Comments.objects.filter(comments_article_id=article_id),
                                                })
 
