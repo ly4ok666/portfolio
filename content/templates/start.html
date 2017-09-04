@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="http://bootstrap-3.ru/assets/ico/favicon.ico">
+
+    <title>My first portfolio</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap_new.css' %}" rel="stylesheet">
+    <!--<link href="{% static 'css/semantic.css' %}" rel="stylesheet">-->
+    <link href="{% static 'css/image.css' %}" rel="stylesheet">
+    <link href="{% static 'css/w3_new.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/cover.css' %}" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <style id="holderjs-style" type="text/css"></style></head>
+
+  <body class="w3-light-grey">
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+       <h1><b>Моё Портфолио</b></h1>
+  <p>Welcome to the my portfolio</p>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="pull-left active"><a href="{% url 'content:start' %}">Начало</a></li>
+        <li><a href="">Портфолио</a></li>
+        <li><a href="">Контакты</a></li>
+
+        <!--<li class="social pull-right"><a href="#">Social Links</a></li>-->
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+         <!-- <div class="inner cover">-->
+            <div class="w3-card-4 w3-margin w3-white">
+            <div class="w3-container">
+
+              <!-- <img class="ui medium box-shadow centered circular image" src="{% static 'img/bratic111.png' %}"> -->
+
+            <h3 class="cover-heading">Заголовок.</h3>
+              <p>Текст приветствия (символов на 170) Hello гайзес. Как сами ? Текст приветствия (символов на 170) Hello гайзес. Как сами ?Текст приветствия (символов на 170) Hello гайзес. Как сами ?</p>
+            <p class="lead">
+              <a href="" class="btn btn-lg btn-default">Портфолио</a>
+            </p>
+
+           </div>
+            </div>
+<hr>
+          <footer><nav class="navbar navbar-default" role="navigation"></nav></footer>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/docs.min.js' %}"></script>
+    <script src="{% static 'js/semantic.js' %}"></script>
+</body></html>
